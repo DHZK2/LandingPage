@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/estilos.css" />
-    <title>LandingPage</title>
+    <title>Gabriel Garcia Marquez</title>
 </head>
 <body>
     <header class="header">
@@ -14,10 +13,10 @@
             <img class="" src="./img/gabo-logo.png" alt="logo" />
         </div>
         <nav class="menu">
-                <li><a href="#obras">Obras</a></li>
-                <li><a href="#biografia">Biografia</a></li>
-                <li><a href="#premios">Premios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#biografia">Biografia</a></li>
+            <li><a href="#obras">Obras</a></li>
+            <li><a href="#premios">Premios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </nav>
     </header>
     <main class="banner">
@@ -27,18 +26,6 @@
             MÁRQUEZ
         </h1>
     </main>
-    <section class="" id="obras">
-        <table class="obras">
-            <tr>
-                <td class="tdObras">
-                    <div class="botonObras">
-                        <a href="https://es.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez" target="
-                        _blank">Obras</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </section>
     <section class="biografia" id="biografia">
         <h2 class="title-head">Biografia</h2>
         <p>
@@ -53,6 +40,33 @@
             personalidad influyó en varios de sus personajes. Fue conocido
             familiarmente y por sus amigos como GABITO.
         </p>
+    </section>
+    <section class="" id="obras">
+        <h2 class="title-head">Obras</h2>
+        <article class="resumen">
+            <h3 class="titulo-obra">Crónica de una muerte <br>anunciada</h3>
+            <div class="contenido-obra">
+                <p>
+                    La obra está inspirada en un crimen real que tuvo lugar en Colombia. Desde la ficción, Gabriel García Márquez logra
+                    construir una crónica, que destaca por el uso original y creativo de recursos literarios y periodísticos.
+                </p>
+                <p>
+                    Crónica de una muerte anunciada es una <span>novela</span> corta de Gabriel García Márquez,<span> publicada en
+                        1981.</span> Tomando elementos del
+                        realismo mágico y del relato policial, la novela cuenta la muerte de Santiago Nasar a manos de los hermanos Vicario.
+                    </p>
+                    <div class="actions">
+                        <div class="readMore">
+                            <a href="https://www.culturagenial.com/es/cronica-de-una-muerte-anunciada-de-gabriel-garcia-marquez/#:~:text=Cr%C3%B3nica%20de%20una%20muerte%20anunciada%20es%20una%20novela%20corta%20de,que%20tuvo%20lugar%20en%20Colombia." target="_blank" class="btn btn-read">
+                                Leer Más
+                            </a>
+                        </div>
+                        <div class="more">
+                            <a href="https://es.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez" target="_blank" class="btn btn-more">Más Obras</a>
+                        </div>
+                    </div>
+                </div>
+        </article>
     </section>
     <section class="premios" id="premios">
         <h2 class="title-head">Premios GABO</h2>
@@ -105,9 +119,11 @@
             </table>
     </section>
     <section class="contacto" id="contacto">
-        <h2 class="title-head">Contacto</h2>
         <article class="info-contacto">
-            <p>Contactanos para obtener más informacion de la vida de GABRIEL GARCÍA MARQUEZ    </p>
+            <div class="texto-contacto">
+                <h2 class="title-head">Contacto</h2>
+                <p>Contactanos para obtener más informacion de la vida de GABRIEL GARCÍA MARQUEZ    </p>
+            </div>
             <form action="" method="post"  class="form-contact">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="name" class="form-control" placeholder="Nombre" required>
@@ -117,11 +133,11 @@
                 <input type="number" name="telefono" id="telefono" class="form-control" placeholder="Telefono">
                 <label for="descripcion">Descripción:</label>
                 <textarea name="descripcion" id="descripcion" cols="10" rows="2" class="form-control" placeholder="Ingrese una descripcion"></textarea>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="btn btn-enviar">
             </form>
         </article>
     </section>
-    <footer class="">
+    <footer>
         &copy; Desarrollado por David Herrera.
     </footer>
     <script src=""></script>
